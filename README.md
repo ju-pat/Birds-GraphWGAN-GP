@@ -42,11 +42,9 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 
 
-### Other secondary folders:
+### Other secondary files and folders:
 
-- **Amedee_GAN/**:
-- - the notebook of the model trained
-- - results of training and evaluation
+- **Amedee_GAN**: the notebook of the model trained from Amedee Roy's article "Using generative adversarial networks (GAN) to simulate central-place foraging trajectories".
 
 - **logs/**: Logs generated during model training and evaluation for TensorBoard.
 
