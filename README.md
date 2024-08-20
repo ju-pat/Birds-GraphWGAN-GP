@@ -3,44 +3,45 @@
 
 # GraphWGAN for seabirds central-place foraging trips Project
 
-This repository contains code and data for the GraphWGAN central-place foraging trips Project, which implements a Graph-based Wasserstein Generative Adversarial Network (WGAN) model for generating realistic seabird trajectories.
+This repository contains code and data for the GraphWGAN central-place foraging trips Project, which implements a Graph-based Wasserstein Generative Adversarial Network with gradient penalty (WGAN-GP) model for generating realistic seabird trajectories.
 
 ## Repository Structure
 
-- **Data_preprocessed/**: Contains the pre-processed data of : segmented into individual trajectories, completed and reshaped for 50 steps by trajectory
-- -
-- -
+- **Main.ipynb**: Main document that serves as the main entry point for running the project, including some data visualization, model training, fake data generation and evaluation.
 
-- **GraphWGAN_GP1 - GraphWGAN_GP5/**: Contains various versions of the GraphWGAN model scripts, each version corresponding to different experimental settings.
+- **Data/**: Contains the pre-processed single trajectories (segmented into individual trajectories, completed and reshaped for 50 steps by trajectory)
+- - the subfolders divide the data by year
 
-- **VAE_1.ipynb**: Jupyter Notebook implementing a Variational Autoencoder (VAE) for graph data, potentially used as a baseline or for comparison with the GraphWGAN model.
+- **GraphWGAN_GP1 - GraphWGAN_GP5/**: Various versions of the GraphWGAN-GP model scripts, each version corresponding to different experimental settings.
 
-- **Main.ipynb**: Jupyter Notebook that serves as the main entry point for running the project, including some data visualization, model training, fake data generation and evaluation.
+- **VAE_1.ipynb**: Jupyter Notebook implementing a Variational Autoencoder (VAE) for graph data, potentially used as a baseline or for comparison with the GraphWGAN model for future work.
+
 
 
 - **logs/**: Logs generated during model training and evaluation for TensorBoard.
-- -
+
+
+- **Visual_data.ipynb**: for visualizing the dataset.
+
+- **Segm des traj_dist.ipynb**: for segmenting GPS data into single trajectories.
+
+-**Data_completion.ipynb**: (to be added) for completing the trajectories iwith missing values and ensuring a constant segmentation time.
+
+-**Reshape_data.ipynb**: for reshaping the trajectories into the desired number of steps
 
 
 
-- **Visual_data.ipynb**: Jupyter Notebook for visualizing data, including both raw and generated graph data.
+- **tools.py**: Functions for calculating trajectory properties
 
-- **Segm des traj_dist.ipynb**: Jupyter Notebook for segmenting trajectory data based on distance.
+- **graph_visualisation.py**: Functions for visualizing the generated graphs and vectors, both from the real and fake dataset
 
--**Reshape_data.ipynb**:
-
-
+- **to_graph_utils.py**: Functions for converting various data formats into graph structures and vice-versa.
 
 
-- **to_graph_utils.py**: Utility functions for converting various data formats into graph structures suitable for the GraphWGAN model.
-
-- **tools.py**: General utility functions used throughout the project.
-
-- **graph_visualisation.py**: Script for visualizing the generated graphs using the GraphWGAN model.
 
 
 - **Amedee_GAN/**:
-- -
+- - 
 - -
 
 
