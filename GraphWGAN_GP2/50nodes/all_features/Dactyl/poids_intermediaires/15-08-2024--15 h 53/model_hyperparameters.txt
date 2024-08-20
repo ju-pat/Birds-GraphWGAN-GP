@@ -1,0 +1,22 @@
+Model Hyperparameters:
+Generator Hyperparameters:
+  input_dim: 1
+  hidden_dim: 4
+  output_dim: 2
+  dropout_rate: 0.2
+Discriminator Hyperparameters:
+  input_dim: 2
+  hidden_dim: 4
+  dropout_rate: 0.2
+GraphGAN Hyperparameters:
+  lr_d: 0.0005
+  lr_g: 0.0005
+  input_dim: 1
+  lambda_gp: 10
+  critic_it: 1
+  gene_it: 1
+  logs_dir: logs/GraphWGAN_GP2/19-08-2024--15 h 53
+  lambda_reg: 0.0
+  lambda_rep: 0.0
+  sigma: 0.5
+  batch_size: 8
