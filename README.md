@@ -54,15 +54,14 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 ## Getting Started
 
-1. Clone the repository and open `Main.ipynb`. For data visualization and pre-processing steps, see `Visual_data.ipynb`, `Segm des traj_dist.ipynb`, `Data_completion.ipynb`, and `Reshape_data.ipynb`.
+1. Clone the repository and open `Main.ipynb`. For data visualization and pre-processing steps, see `Visual_data.ipynb`, `Segm des traj_dist.ipynb`, `Data_completion.ipynb`, and `Reshape_data.ipynb` (do not run them since they use other datasets).
 
-2. In `Main.ipynb`, choose the model to be trained, and define the hyper-parameters (at least the number of epochs has to be modified).
+2. In `Main.ipynb`, choose the model to be trained: modify the gan = "" and the True/False value for the corresponding WGAN-GP.
 
-3. If desired (the pre-runned script outputs remain available in this repo), execute the scripts in the `Main.ipynb`, visualize the real dataset and the generated trajectories.
+3. Since the pre-runned script outputs remain available in this repo, you can execute the scripts in the `Main.ipynb`, visualize the real dataset and the generated trajectories. By default, pre-trained models will be shown and not trained again (num_epochs=0). To train a model from scratch, comment the lines to load the model weights in the last cell of `Generator and Discriminator initialization`.
 
-4. You can follow the training using the tensorboard command written in the code and executing it in a terminal.
+4. You can follow the training using the tensorboard command written in the code `tensorboard --logdir=logs` and executing it in a terminal.
 
-5. To use re-trained models, modify the part before training of generator and discriminator weight initialization.
 
 
 
