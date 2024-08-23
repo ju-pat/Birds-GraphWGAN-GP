@@ -26,7 +26,7 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 - **Segm des traj_dist.ipynb**: for segmenting GPS data into single trajectories.
 
-- **Data_completion.ipynb**: (to be added) for completing the trajectories iwith missing values and ensuring a constant segmentation time.
+- **Data completion.ipynb**: for completing the trajectories iwith missing values and ensuring a constant segmentation time.
 
 - **Reshape_data.ipynb**: for reshaping the trajectories into the desired number of steps
 
