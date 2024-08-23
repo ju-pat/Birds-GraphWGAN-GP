@@ -9,7 +9,7 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 ### Important files and folders:
 
-- **Main.ipynb**: Main document that serves as the main entry point for running the project, including some data visualization, model training, fake data generation and evaluation.
+- **Main_github.ipynb**: Main document that serves as the main entry point for running the project, including some data visualization, model training, fake data generation and evaluation.
 
 - **Data/**: Contains the pre-processed single trajectories (segmented into individual trajectories, completed and reshaped for 50 steps by trajectory)
 - - the subfolders divide the data by year
@@ -58,9 +58,9 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 2. For data visualization and pre-processing steps, see `Visual_data.ipynb`, `Segm des traj_dist.ipynb`, `Data_completion.ipynb`, and `Reshape_data.ipynb` (do not run them since they use other datasets).
 
-3. To see models performance or to train model, open `Main.ipynb`. Choose the model to be trained: in one of the first cells, modify the gan = "" and the True/False value for the corresponding WGAN-GP.
+3. To see models performance or to train model, open `Main_github.ipynb`. Choose the model to be trained: in one of the first cells, modify the gan = "" and the True/False value for the corresponding WGAN-GP.
 
-4. Execute the script of `Main.ipynb`, visualize the real dataset and the generated trajectories. Depending on if you run it on Google Colab or on a local machine, comment the unnecessary cells in the Import data section (first cells).
+4. Execute the script of `Main_github.ipynb`, visualize the real dataset and the generated trajectories. Depending on if you run it on Google Colab or on a local machine, comment the unnecessary cells in the Import data section (first cells).
 
 5. By default, pre-trained models will be shown and not trained again (num_epochs=0). To train a model from scratch, comment the lines to load the model weights in the last cell of `Generator and Discriminator initialization`.
 
