@@ -54,15 +54,17 @@ This repository contains code and data for the GraphWGAN central-place foraging 
 
 ## Getting Started
 
-1. Clone the repository and open `Main.ipynb`.
+1. Clone/download the repository.
 
 2. For data visualization and pre-processing steps, see `Visual_data.ipynb`, `Segm des traj_dist.ipynb`, `Data_completion.ipynb`, and `Reshape_data.ipynb` (do not run them since they use other datasets).
 
 3. To see models performance or to train model, open `Main.ipynb`. Choose the model to be trained: in one of the first cells, modify the gan = "" and the True/False value for the corresponding WGAN-GP.
 
-4. Since the pre-runned script outputs remain available in this repo, you can execute the scripts in the `Main.ipynb`, visualize the real dataset and the generated trajectories. By default, pre-trained models will be shown and not trained again (num_epochs=0). To train a model from scratch, comment the lines to load the model weights in the last cell of `Generator and Discriminator initialization`.
+4. Execute the script of `Main.ipynb`, visualize the real dataset and the generated trajectories. Depending on if you run it on Google Colab or on a local machine, comment the unnecessary cells in the Import data section (first cells).
 
-5. You can follow the training using the tensorboard command written in the code `tensorboard --logdir=logs` and executing it in a terminal.
+5. By default, pre-trained models will be shown and not trained again (num_epochs=0). To train a model from scratch, comment the lines to load the model weights in the last cell of `Generator and Discriminator initialization`.
+
+6. You can follow the training using the tensorboard command written in the code `tensorboard --logdir=logs` and executing it in a terminal.
 
 
 
